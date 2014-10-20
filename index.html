@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Jason Naradowsky</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.inference.phy.cam.ac.uk/hmw26/crf/index.rss" />
+<script type="text/javascript">
+<!--
+var hidden = true;
+
+function switchMenu(obj) {
+	var el = document.getElementById(obj);
+	if ( el.style.display != "none" ) {
+		el.style.display = 'none';
+	}
+	else {
+		el.style.display = '';
+	}
+}
+
+function switchAll(obj, num) {
+	if(hidden){
+      obj.innerHTML = "hide all abstracts"
+	}
+	else{
+	  obj.innerHTML = "show all abstracts"
+	}
+    for(var i=1; i<=num; i++){
+	  var el = document.getElementById("pub" + i);
+	  if ( hidden) {
+		el.style.display = '';
+	  }
+	  else {
+		el.style.display = 'none';
+	  }	
+	}
+	hidden = !hidden;
+}
+
+//-->
+</script>
+
+</head>
+
+<body>
+<div id="wrap">
+<!--
+<div class="menu">
+Professional | <a href="personal.html"><u>Personal</u></a>
+</div>
+-->
+<img src="_images/banner.jpeg" />
+
+
+<p>Hello! I'm a fifth and final year graduate student in the 
+<a href="http://www.cs.umass.edu/">Computer Science Department</a> at 
+<a href="http://www.umass.edu/">UMass Amherst</a>, and via cotutelle at <a href="http://www.mq.edu.au">Macquarie University</a>, where I work in 
+natural language processing and machine learning.  My advisors are 
+<a href="http://www.cs.umass.edu/~dasmith/">David Smith</a> and 
+<a href="http://web.science.mq.edu.au/~mjohnson/">Mark Johnson</a>.  
+I'm also occasionally in <a href="https://umasstransit.org/st-wiki-direct/images/thumb/1/17/Academic-SouthCollege-Main.jpg/530px-Academic-SouthCollege-Main.jpg">South College</a>, pretending to be a 
+<a href="http://www.umass.edu/linguist/">linguist</a>.</p>
+
+<p>For summer 2012 I am a visiting researcher at the <a href="http://www.naist.jp/index_j.html">Nara Institute of Science and Technology</a> working with Prof. <a href="http://cl.naist.jp/staff/matsu/home-e.html">Yuji Matsumoto</a>, supported by an NSF EAPSI fellowship.</p>
+
+<p>My <a href="index.html#papers">papers</a>, and my <a href="_cv/narad_cv.pdf">cv</a>.</p>
+
+<p>My <a href="http://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Bacon_number">Erdős–Bacon number</a> is arguably no greater than 8.</p>
+
+<h1><a name="introduction" class="nav-target">research</a></h1>
+
+<p>My research focuses on statistical models of natural language processing and acquisition, with an emphasis on joint inference, unsupervised learning and statistical relational learning.  In my dissertation I present efficient methods for representing syntax in graphical models, and techniques for leveraging these representations to improve performance on related NLP problems.  In particular, I develop methods for training such models in the absence of syntactic annotation, learning latent syntactic representations that best support the desired end task. </br>
+	
+My <a href="old_statement.html">old research statement</a> is still relevant, but not pursued in my dissertation.
+</p>
+
+
+<h1><a name="papers" class="nav-target">papers by year</a><sub style="font-size: 16px;">[<a onclick="switchAll(this, 7);">show all abstracts</a>]</sub></h1>
+
+<h2><a name="2012" class="nav-target">2012</a></h2>
+
+<p><a href="_papers/relmarg_emnlp2012.pdf">Improving NLP through Marginalization of Hidden Syntactic Structure</a><br />
+	Jason Naradowsky,
+    <a href="http://riedelcastro.github.com/">Sebastian Riedel</a>, and 
+    <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a>
+    <br />
+	EMNLP 2012  
+    <br />
+	[<a onclick="switchMenu('pub6');">abstract</a>] 
+    [<a href="_papers/relmarg_emnlp2012.pdf">paper</a>] 
+    [<a href="_bib/narad_emnlp2012.bib">bib</a>]
+</p>
+ 
+<div id="pub6"  style="display:none;">
+<blockquote>
+	Many NLP tasks make predictions that are inherently coupled to syntactic relations, but for many languages the resources required to provide such syntactic annotations are unavailable.  For others it is unclear exactly how much of the syntactic annotations can be effectively leveraged with current models, and what structures in the syntactic trees are most relevant to the current task.  
+</br>
+</br>
+	We propose a novel method which avoids the need for any syntactically annotated data when predicting a related NLP task.  Our method couples latent syntactic representations, constrained to form valid dependency graphs or constituency parses, with the prediction task via specialized factors in a Markov random field.  At both training and test time we marginalize over this hidden structure, learning the optimal latent representations for the problem.  Results show that this approach provides significant gains over a syntactically uninformed baseline, outperforming models that observe syntax on an English relation extraction task, and performing comparably to them in semantic role labeling.
+</blockquote>
+</div>
+
+<p><a href="_papers/narad_coling2012.pdf">Grammarless Parsing for Joint Inference</a><br />
+	Jason Naradowsky,
+    <a href="http://timvieira.github.com/">Tim Vieira</a>, and 
+    <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a>
+    <br />
+	COLING 2012  
+    <br />
+	[<a onclick="switchMenu('pub5');">abstract</a>] 
+    [<a href="_papers/narad_coling2012.pdf">paper</a>] 
+    [<a href="_bib/narad_coling2012.bib">bib</a>]
+</p>
+ 
+<div id="pub5"  style="display:none;">
+<blockquote>
+	Many NLP tasks interact with syntax. The presence of a named entity span, for example, is often a clear indicator of a noun phrase in the parse tree, while a span in the syntax can help indicate the lack of a named entity in the spans that cross it. For these types of problems joint inference offers a better solution than a pipelined approach, and yet large joint models are rarely pursued. In this paper we argue this is due in part to the absence of a general framework for joint inference which can efficiently represent syntactic structure.
+</br>
+</br>
+We propose an alternative and novel method in which constituency parse constraints are imposed on the model via combinatorial factors in a Markov random field, guaranteeing that a variable configuration forms a valid tree. We apply this approach to jointly predicting parse and named entity structure, for which we introduce a zero-order semi-CRF named entity recognizer which also relies on a combinatorial factor. At the junction between these two models, soft constraints coordinate between syntactic constituents and named entity spans, providing an additional layer of flexibility on how these models interact. With this architecture we achieve the best-reported results on both CRF-based parsing and named entity recognition on sections of the OntoNotes corpus, and outperform state-of-the-art parsers on an NP-identification task, while remaining asymptotically faster than traditional grammar-based parsers.
+</blockquote>
+</div>
+
+<p>Combinatorial Constraints for Constituency Parsing in Graphical Models<br />
+	Jason Naradowsky,
+    <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a>
+    <br />
+	Technical Report, University of Massachusetts Amherst, 2012.
+    <br />
+</p>
+
+<h2><a name="2011" class="nav-target">2011</a></h2>
+
+<p><a href="_papers/P11-1090.pdf">Unsupervised Bilingual Morpheme Segmentation and Alignment with <br /> Context-rich Hidden Semi-Markov Models</a><br />
+	Jason Naradowsky and 
+    <a href="http://research.microsoft.com/en-us/people/kristout/">Kristina Toutanova</a> 
+    <br />
+	ACL 2011  
+    <br />
+	[<a onclick="switchMenu('pub4');">abstract</a>] 
+    [<a href="_papers/P11-1090.pdf">paper</a>] 
+    [<a href="_slides/morph_align.pdf">slides</a>] 
+    [<a href="_bib/narad_acl11a.bib">bib</a>]
+</p>
+
+<!--<br />Slides:[<a href="_slides/morph_align.key">keynote</a>][<a href="_slides/morph_align.pdf">pdf</a>]</p>
+ -->
+ 
+<div id="pub4"  style="display:none;">
+<blockquote>
+This paper describes an unsupervised dynamic graphical model for morphological segmentation and bilingual morpheme alignment for statistical machine translation. The model extends Hidden Semi-Markov chain models by using factored output nodes and special structures for its conditional probability distributions. It relies on morpho-syntactic and lexical source-side information (part-of-speech, morphological segmentation) while learning a morpheme segmentation over the target language. Our model outperforms a competitive word alignment system in alignment quality. Used in a monolingual morphological segmentation setting it substantially improves accuracy over previous state-of-the-art models on three Arabic and Hebrew datasets.
+</blockquote>
+</div>
+
+<p>
+	<a href="_papers/IR-825.pdf">A Discriminative Model for Joint Morphological Disambiguation and Dependency Parsing</a> 
+	<br />
+	<a href="http://www2.ctl.cityu.edu.hk/~jsylee/">John Lee</a>, 
+    Jason Naradowsky, and 
+    <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a>
+    <br />
+	ACL 2011 
+    <br />
+	[<a onclick="switchMenu('pub3');">abstract</a>] 
+    [<a href="_papers/IR-825.pdf">paper</a>] 
+    [<a href="_bib/narad_acl11b.bib">bib</a>]
+</p>
+
+
+<div id="pub3"  style="display:none;">
+<blockquote>
+	Most previous studies of morphological disambiguation and dependency parsing have been pursued independently. Morphological taggers operate on n-grams and do not take into account syntactic relations; parsers use the ``pipeline'' approach, assuming that morphological information has been separately obtained.<br /><br />
+
+	However, in morphologically-rich languages, there is often considerable interaction between morphology and syntax, such that neither can be disambiguated without the other. In this paper, we propose a discriminative model that jointly infers morphological properties and syntactic structures. In evaluations on various highly-inflected languages, this joint model outperforms both a baseline tagger in morphological disambiguation, and a pipeline parser in head selection.
+</blockquote>
+</div>
+
+
+
+<p>
+		Feature Induction for Online Constraint-based Phonology Acquisition
+	<br />
+    Jason Naradowsky, 
+    <a href="http://people.umass.edu/pater/">Joe Pater</a>, and
+    <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a>
+    <br />
+	Synthesis Project, Presented at NECPHON 2011
+    <br />
+	[<a onclick="switchMenu('pub7');">abstract</a>]
+	[<a href="_papers/synthesis.pdf">paper</a>] 
+	[<a href="_bib/narad_synthesis.bib">bib</a>]
+</p>
+
+
+<div id="pub7"  style="display:none;">
+<blockquote>
+Log-linear models provide a convenient method for coupling existing machine learning methods to constraint-based linguistic formalisms like optimality theory and harmonic grammar. While the learning methods themselves have been well studied in this domain, the question of how these constraints originate is often left unanswered. We present a novel, error-driven approach to constraint induction that performs lightweight decisions based on local information. When evaluated on the task of reproducing human gradient phonotactic judgements, a model trained with this procedure can sometimes nearly match the performance of state-of-the-art methods that rely on global information and individual assessment of all possible constraints. We conclude by discussing methods for incorporating context and linguistic bias into the induction scheme to produce more accurate grammars.
+</blockquote>
+</div>
+
+
+
+<h2><a name="2010" class="nav-target">2010</a></h2>
+
+
+<p>Learning Hidden Metrical Structure with a Log-linear Model of Grammar 
+	<br />
+ 	Jason Naradowsky, 
+    <a href="http://people.umass.edu/pater/">Joe Pater</a>, 
+    <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a>, and 
+    <a href="http://people.umass.edu/rstaubs/">Robert Staubs</a> 
+    <br />
+    Workshop on Computational Modelling of Sound Pattern Acquisition 2010
+</p>
+ 
+<!-- "Learning hidden metrical structure with a log-linear model of grammar." Workshop on Computational Modelling of Sound Pattern Acquisition. Edmonton, Alberta, Canada: University of Alberta. 2010.
+ -->
+<h2><a name="2009" class="nav-target">2009</a></h2>
+
+<p>
+	<a href="_papers/mimno09polylingual.pdf">Polylingual Topic Models</a>
+    <br  />
+	<a href="http://www.cs.umass.edu/~mimno/">David Mimno</a>, 
+    <a href="http://www.cs.umass.edu/~wallach">Hanna Wallach</a>, 
+    Jason Naradowsky, 
+    <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a> and
+	<a href="http://www.cs.umass.edu/~mccallum/">Andrew McCallum</a> 
+    <br />
+    EMNLP 2009
+    <br />
+    [<a onclick="switchMenu('pub2');">abstract</a>]   
+    [<a href="_papers/mimno09polylingual.pdf">paper</a>] 
+    [<a href="_bib/narad_emnlp09.bib">bib</a>]
+    
+
+<div id="pub2"  style="display:none;">
+<blockquote>
+Topic models are a useful tool for analyzing large text collections, but have previously been applied in only monolingual, or at most bilingual, contexts. Meanwhile, massive collections of interlinked documents in dozens of languages, such as Wikipedia, are now widely available, calling for tools that can characterize content in many languages. We introduce a polylingual topic model that discovers topics aligned across multiple languages. We explore the model's characteristics using two large corpora, each with over ten different languages, and demonstrate its usefulness in supporting machine translation and tracking topic trends across languages.
+</blockquote>
+</div>
+
+
+<p>
+	<a href="_papers/ijcai09.pdf">Improving Morphology Induction by Learning Spelling Rules</a>
+    <br />
+	Jason Naradowsky and 
+    <a href="http://homepages.inf.ed.ac.uk/sgwater/">Sharon Goldwater</a>
+    <br />
+    IJCAI 2009 
+    <br />
+    [<a onclick="switchMenu('pub1');">abstract</a>]   
+    [<a href="_papers/ijcai09.pdf">paper</a>] 
+    [<a href="_slides/ijcai09.pdf">slides</a>] 
+    [<a href="_bib/narad_ijcai09.bib">bib</a>]
+</p>
+
+<div id="pub1" style="display:none;">
+<blockquote>
+Unsupervised learning of morphology is an important task for human learners and in natural language processing systems. Previous systems focus on segmenting words into substrings (<em>taking</em> => tak.ing), but sometimes a segmentation-only analysis is insufficient (e.g., <em>taking</em> may be more appropriately analyzed as <em>take.ing</em>, with a spelling rule accounting for the deletion of the stem-final e). In this paper, we develop a Bayesian model for simultaneously inducing both morphology and spelling rules.	We show that the addition of spelling rules improves performance over the baseline morphology-only model.
+</blockquote>
+</div>
+
+<p> 
+	<a href="_papers/mimno09polylingual.pdf">Polylingual Topic Models</a>
+	<br />
+	<a href="http://www.cs.umass.edu/~mimno/">David Mimno</a>, 
+    <a href="http://www.cs.umass.edu/~wallach">Hanna Wallach</a>, 
+    <a href="http://www.cs.umass.edu/~lmyao/">Limin Yao</a>, 
+    Jason Naradowsky and 
+	<a href="http://www.cs.umass.edu/~mccallum/">Andrew McCallum</a>
+	<br />
+    The Learning Workshop (Snowbird) 2009
+    <br />
+    </p>
+
+
+
+
+
+
+
+<h1><a name="software" class="nav-target">software</a></h1>
+
+<p><a href="http://www.nltk.org/">Natural Language Toolkit (NLTK)</a>:<br />
+The <a href="http://www.nltk.org/">Natural Language Toolkit</a> is a collection of open source Python modules that can be used freely for research or pedagogical purposes.  There's also <a href="http://www.amazon.com/Natural-Language-Processing-Python-Steven/dp/0596516495">a book</a> out now documenting how to use the NTLK - it doubles as an introductory computational linguistics coursebook.
+For the summer of 2008 I worked on the NLTK while sponsored under the <a href="http://code.google.com/soc/">Google Summer of Code</a> program, during which time I implemented a suite of dependency parsers under the supervision of <a href="http://riedelcastro.github.com/">Sebastian Riedel</a> and <a href="http://www.jasonbaldridge.com/">Jason Baldridge</a>.</p>
+
+<div class="footer">
+6-03-2012
+</div>
+</div>
+</div>
+</body>
+</html>

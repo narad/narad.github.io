@@ -1,0 +1,305 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,roman]{moderncv}
+%\usepackage{mathpazo}
+%\renewcommand{\sfdefault}{\rmdefault}
+
+% colors
+\definecolor{light-gray}{gray}{0.50}
+\definecolor{dark-gray}{gray}{0.30}
+
+% moderncv themes
+\moderncvtheme[grey]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+%\makeatletter
+%\renewcommand\subsection{\@startsection {section}{1}{\z@}%
+%    {-3.5ex \@plus -1ex \@minus -.2ex}%
+%    {2.3ex \@plus.2ex}%
+%    {\Large}}
+%\makeatother
+    
+\usepackage[resetlabels]{multibib}
+\newcites{conf}{Refereed Conference Proceedings} 
+\newcites{workshop}{Workshop Proceedings}
+
+
+% personal data
+\firstname{\textcolor{light-gray}{Jason}}
+\familyname{{ }\hspace{-.3em}\textcolor{black}{Naradowsky}\hspace{3.55em}}
+%\title{Jason Naradowsky}               % optional, remove the line if not wanted
+\address{Amherst}{Massachusetts}    % optional, remove the line if not wanted
+\mobile{(650) 248 2859}                    % optional, remove the line if not wanted
+%% \phone{phone (optional)}                      % optional, remove the line if not wanted
+%% \fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{narad@cs.umass.edu}                      % optional, remove the line if not wanted
+\homepage{www.cs.umass.edu/~narad}                % optional, remove the line if not wanted
+%% \extrainfo{additional information (optional)} % optional, remove the line if not wanted
+%\photo[64pt]{mugshot}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%% \quote{Improve users' lives}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\pagestyle{empty}
+\vspace{-3em}
+%\cvline{}{\hfill http://www.cs.umass.edu/~narad}{}{}{}{}
+%\cvline{}{\hfill narad@cs.umass.edu}{}{}{}{}
+%\cvline{}{\hfill Department of Computer Science}{}{}{}{}
+%\cvline{}{\hfill University of Massachusetts Amherst}{}{}{}{}
+%\cvline{}{\hfill 140 Governors Drive}{}{}{}{}
+%\cvline{}{\hfill Amherst, MA 01003}{}{}{}{}
+\cvline{}{Department of Computer Science \hfill \url{http://cs.umass.edu/~narad} \hspace{.2em}}{}{}{}{}
+\cvline{}{University of Massachusetts Amherst \hfill narad@cs.umass.edu \hspace{.2em}}{}{}{}{}
+\cvline{}{140 Governors Drive}{}{}{}{}
+\cvline{}{Amherst, MA 01003}{}{}{}{}
+\vspace{.3em}
+
+\section{Research Interests}
+\cvline{}{Statistical NLP, Graphical Models, Belief Propagation, Joint inference, }
+\cvline{}{Machine Translation, Morphologically Rich Languages, Language Acquisition}{}{}{}{}
+
+\section{Education}
+\cventry{2008--2014}{PhD in Computer Science}{University of Massachusetts Amherst}{}{}{}
+\cvline{}{Advisor: David A. Smith}
+\cventry{2011--2004}{PhD in Computer Science}{Macquarie University}{}{}{}
+\cvline{}{Advisor: Mark Johnson}
+\vspace{.3em}
+
+%\cvline{title}{\emph{A Parallel Preconditioner for Finite Difference Octree Grids}}
+%\cvline{description}{Developed a preconditioner for a specific fluid flow problem which exploits the graph-property of the finite difference grid creator to efficiently solve the linear system in parallel}
+
+\cventry{2008}{MSc, Artificial Intelligence}{University of Edinburgh}{}{}{}
+\cvline{}{Thesis: Improving Morphology Induction with Phonological Rules}
+\cvline{}{Advisor: Sharon Goldwater}
+\vspace{.3em}
+
+\cventry{2007}{MS, Computational Linguistics}{State University of New York at Buffalo}{}{}{}
+\cvline{}{Thesis: The Effect of Frequencies and Unseen Events on Parser Portability}
+\cvline{}{Advisor: Doug Roland}
+\vspace{.3em}
+
+\cventry{2006}{MA, Human Computer Interaction}{State University of New York at Oswego}{}{}{}
+\cvline{}{Thesis: Neural Networks for Automated Design Evaluation}
+\cvline{}{Advisor: Craig Graci}
+\vspace{.3em}
+
+\cventry{2001-2005}{BS, Computer Science}{State University of New York at Oswego}{}{}{}
+\cventry{2001-2005}{BA, Linguistics}{State University of New York at Oswego}{}{}{}
+\cvline{}{Specialization: Artificial Intelligence, with Honors}
+\cvline{}{Minor: Cognitive Science}
+
+\section{Summer Schools}
+\cvline{2007}{Linguistic Society of America Summer Institute 2007}{}{}{}
+\cvline{}{Stanford University, Palo Alto, CA}
+
+\section{Doctoral Thesis}
+\cvline{Title}{\emph{Learning with Joint Inference and Latent Linguistic Structure in Graphical Models}}{}{}{}
+\cvline{Supervisors}{David A. Smith and Mark Johnson}{}{}{}
+\cvline{Committee}{Ben Marlin, Andrew McCallum, Joe Pater, and Kristina Toutanova}{}{}{}
+\cvline{Description}{Developed a modeling framework for constructing joint factor graph models of NLP problems, and described how syntactic variables can be marginalized over during training to produce task-specific syntactic distributions without the need for treebanks. }{}{}{}
+\vspace{.3em}
+
+%\section{Doctoral thesis}
+%\cvline{title}{\emph{A Parallel Preconditioner for Finite Difference Octree Grids}}
+%\cvline{advisor}{John R. Gilbert, University of California, Santa Barbara}
+%\cvline{description}{Developed a preconditioner for a specific fluid flow problem which exploits the graph-property of the finite difference grid creator to efficiently solve the linear system in parallel}
+%
+%\section{Masters thesis}
+%\cvline{title}{\emph{Improved Monte Carlo Linear Solvers Though Better Iterative Processes}}
+%\cvline{advisor}{Ashok Srinivasan, Florida State University, Tallahssee}
+%\cvline{description}{Developed an improved iterative process for solving non-diagonal linear systems through Monte Carlo methods}
+%
+%\section{Experience}
+%\cventry{2008--present}{Software Engineer}{Google Inc.}{Mountain View}{}{Wrote code to improve video search results on www.google.com
+%\begin{itemize}%
+%\item Completed a large back-end and user-visible improvement in video results serving
+%\item Implemented various improvements to video search results through ranking, triggering and UI placement
+%\item Responsible for various production infrastructure changes to consolidate our serving architecture
+%\item Made serving infrastructure stable and reliable
+%\item Served as point-of-contact for production infrastructure
+%\item Supported the launch of Google Instant for video results
+%\item Participated in the development of Google Books as a 20\% engineer
+%\item Organized talks under Authors@Google program
+%\end{itemize}}
+%
+%\cventry{2005--2005}{Software Engineering Intern}{Google Inc.}{Mountain View}{}
+% {Improved Google's Payment Fraud detection system%
+%\begin{itemize}%
+%\item Designed and implemented a location-based signal for detecting fraud
+%\end{itemize}
+%}
+%
+%\cventry{2000--2002}{Consultant}{Infotech Financials}{Bombay, India}{}
+% {Setup and maintainance of infrastructure, consulted on software design%
+%\begin{itemize}%
+%\item Designing, procuring, setup, and maintainance of their diskless Linux fleet and network services
+%\item Consulted on software projects
+%\end{itemize}
+%}
+%
+%\section{Computer skills}
+%\cvcomputer{Super}{C/C++, Java, Python}{Good}{Assembly, Shell, \LaTeX, R}
+%\cvcomputer{Passable}{Perl, Lisp, ARM}{Platforms}{Linux, Android, Web}
+%\cvcomputer{Concepts}{System design, Parallel programming}{Avoid}{Microsoft Office}
+
+
+%\cventry{April 2011}{Promoted}{Google Inc}{Mountain View, California}{}{Promoted to Senior Software Engineer}
+%\cventry{June 2002}{Institute Silver Medal}{Indian Institute of Technology}{Bombay}{}{Received the Institute Silver Medal for academic achievement}
+%\cventry{June 2002}{Academic distinction}{Indian Institute of Technology}{Bombay}{}{Received the M.N.Gopalan Prize for academic achievement}
+
+%\section{Interests}
+%\cvcomputer{UX}{End-user design, User Experience}{Software}{Linux and Open Source}
+%\cvcomputer{Embedded}{Arduino/AVR, electronics}{Mobile}{Android and usability}
+%\cvcomputer{Health}{Bicycling, Running, Juggling}{Languages}{Mandarin Chinese}
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\section{Research Experience}
+\cvline{2014--current}{\textbf{Postdoctoral Research Associate}}{}{}{}
+\cvline{}{University College London, London, England}{}{}{}
+\cvline{}{Continuing research in large-scale factor graph models, task-directed parsing models, matrix factorization and low-rank logic embeddings.}{}{}{}
+\vspace{.3em}
+
+\cvline{2012}{\textbf{Visiting Researcher}}{}{}{}
+\cvline{}{Nara Institute of Science and Technology (NAIST), Nara, Japan}{}{}{}
+\cvline{}{Advisor: Yuji Matsumoto}{}{}{}
+\cvline{}{Explored techniques of incorporating syntactic information into sequence models for part-of-speech tagging in inflectional languages.  Developed novel coarse-to-fine approaches based on relaxations to marginal inference. }{}{}{}
+\vspace{.3em}
+
+\cvline{2010}{\textbf{Research Intern}}{}{}{}
+\cvline{}{Microsoft Research, Redmond, WA}{}{}{}
+\cvline{}{Advisor: Kristina Toutanova}{}{}{}
+\cvline{}{Research in morpheme-based alignment models for machine translation.  Resulted in a model for joint morpheme segmentation and alignment based on the HMM alignment model which improved alignment quality and outperformed all previous results on monolingual morphological segmentation for Arabic.}{}{}{}
+\vspace{.3em}
+
+\cvline{2008-2011}{\textbf{Research Assistant}}{}{}{}
+\cvline{}{Computer Science Department, University of Massachusetts Amherst}{}{}{}
+\cvline{}{Advisors: Andrew McCallum and David A. Smith}{}{}{}
+\cvline{}{Research in unsupervised language learning, topic-modeling, parsing, and joint inference.}{}{}{}
+\vspace{.3em}
+
+\cvline{2008}{\textbf{Google Summer of Code 2008}}{}{}{}
+\cvline{}{Project: Dependency Parsing in the Natural Language Toolkit}{}{}{}
+\cvline{}{Advisors: Sebastian Riedel and Jason Baldridge}{}{}{}
+\cvline{}{Implemented a suite of four dependency parsers, relevant interfaces, and readers for commonly-used corpora.}{}{}{}
+\vspace{.3em}
+
+\cvline{2005-2006}{\textbf{Research Assistant}}{}{}{}
+\cvline{}{Psychology Department, State University of New York at Oswego}{}{}{}
+\cvline{}{Advisors: Lin Qiu and Songmei Han}{}{}{}
+\cvline{}{Research on cross-cultural HCI and adaptive feedback systems.  Developed web applications for testing interface usability and, in a separate project, augmented a program to provide adaptive natural language critiques for Java code.   Conducted a set of experiments using undergraduate student participants for both projects.}{}{}{}
+
+\section{Teaching Experience}
+
+\cvline{Fall 2009}{Grader, Computer Science Department, University of Massachusetts Amherst}{}{}{}
+\cvline{}{Class: CMPSCI 585: Introduction to Natural Language Processing}{}{}{}{}
+\cvline{}{Instructor: David A. Smith}{}{}{}{}
+
+\section{Advising}
+\subsection{Undergraduate Committee}
+\cvline{}{Elias Zeidan, Marlboro College, 2013}{}{}{}
+
+
+% Publications from a BibTeX file using the multibib package
+\section{Publications} 
+% The generated aux file for each bibliography needs to be 
+% handled separately running 'bibtex <foo.aux>' to show up
+
+\nociteconf{narad:2012:EMNLP}
+\nociteconf{narad-grammarless2012}
+\nociteconf{narad:2011:ACL}
+\nociteconf{lee:2011:ACL}
+\nociteconf{mimno:2009:EMNLP, narad:2009:IJCAI}
+\nociteworkshop{mimno:2009:snowbird}
+\nociteworkshop{staubs:2010}
+\nociteworkshop{feature-induction:2011}
+
+\bibliographystyleconf{plainyr-rev}
+\bibliographystyleworkshop{plainyr-rev}
+
+\vspace{.3em}
+\bibliographyconf{conf}
+\vspace{.5em}
+\bibliographyworkshop{workshop}
+
+\section{Professional Service}
+\cvline{}{Reviewer for NESCAI 2010, EMNLP 2010, ACL 2011, CoNLL 2011, EMNLP 2011, and IJCNLP 2011, EACL 2012, ACL 2012, ACL-SRW 2012, EMNLP 2012, ACL 2013, IJCNLP 2013, ACL 2014, EMNLP 2014}{}{}{}
+
+\section{Awards and Achievements}
+
+\cvline{2014}{Best Reviewer, ACL 2014}{}{}{}
+\vspace{.3em}
+
+\cvline{2012}{East Asia and Pacific Summer Institute (EAPSI Fellowship)}{}{}{}
+\cvline{}{National Science Foundation}{}{}{}
+\vspace{.3em}
+
+\cvline{2012}{Best Reviewer, EMNLP 2012}{}{}{}
+\vspace{.3em}
+
+\cvline{2011}{Cotutelle International Macquarie University Research Scholarship (iMQRES)}{}{}{}
+\cvline{}{Macquarie University}{}{}{}
+\vspace{.3em}
+
+\cvline{2011}{Institute for Computational and Experimental Study of Language (ICESL) Seed Grant}{}{}{}
+\cvline{}{University of Massachusetts Amherst}{}{}{}
+\vspace{.3em}
+
+\cvline{2005}{Oebele Van Dyk Outstanding Senior in Computer Science Award}{}{}{}
+\cvline{}{State University of New York at Oswego}{}{}{}
+\vspace{.3em}
+
+\cvline{2001-2005}{Presidential Scholarship}{}{}{}
+\cvline{}{State University of New York at Oswego}{}{}{}
+\vspace{.3em}
+
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
+
+%\section{Skills}
+%\cvline{}{Programming Languages: Java, Scala, Ruby}{}{}{}
+\section{Personal Details}
+\cvline{}{Citizenship: USA}{}{}{}
+\cvline{}{Date of Birth: July 9th, 1983}{}{}{}
+\cvline{}{Languages: English (native), Latin (reading), Japanese, Arabic (beginner)}{}{}{}
+\cvline{}{Programming Languages: Scala, Java, Ruby, LISP, Clojure}{}{}{}
+
+\end{document}
+
+
+%% end of file `template_en.tex'.

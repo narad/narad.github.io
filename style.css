@@ -1,0 +1,116 @@
+body {
+	background-color: white;
+	font-family: 'Optima', Verdana, 'Bitstream Vera Sans', sans-serif;
+	color:#888;
+ 	padding: 2em 0em 4em 0;
+	font-weight: normal;
+}
+
+
+#wrap {
+     width: 625px;
+     margin: auto;
+     background-color: white;
+	 border: .2em  #555; 
+}
+
+
+#content {
+	padding-bottom: 0px 10px 10px 10px;
+}
+
+
+div.menu {
+	position: relative;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+
+div.button {
+	margin-right: 2em;
+	position: relative;
+	height: 1.5em;
+	padding: 5px 10px 0px 10px;
+	font-size: 14px;
+	float: left;
+	border: 1px solid #aaa;
+	width: 72px;
+	text-align: center;
+}
+
+
+blockquote {
+	margin-top: 20px;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 30px;
+}
+
+
+blockquote:before {
+	display: marker;
+	content: url("_images/left_quote_light.png");
+	padding-right: 7px;
+}
+
+
+blockquote:after {
+	display: marker;
+	content: url("_images/right_quote_light.png"); padding-left: 5px;
+}
+
+a {
+font-weight: bold;
+color:#999;
+text-decoration: none;
+}
+
+a.nav {
+font-weight: normal;
+color: #aaa;
+}
+
+a.nav-target {
+font-weight: normal;
+color:#900;
+}
+
+a.title {
+text-transform: lowercase;
+color: #888;
+letter-spacing: 0.1em;
+font-weight: normal;
+}
+
+a:hover {
+color:#900;
+}
+
+h1 {
+font-size: 1.8em;
+text-transform: lowercase;
+font-weight: normal;
+padding-top: 10px;
+padding-bottom: 0px;
+margin-bottom: 0px;
+}
+
+
+h2 {
+font-size: 1.2em;
+text-transform: lowercase;
+font-weight: normal;
+padding-bottom: 2px;
+}
+
+
+div.footer {
+padding-top: 5em;
+font-size: 0.7em;
+text-align: right;
+}
