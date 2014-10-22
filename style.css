@@ -1,17 +1,36 @@
 body {
 	background-color: white;
-	font-family: 'Optima', Verdana, 'Bitstream Vera Sans', sans-serif;
-	color:#888;
- 	padding: 2em 0em 4em 0;
-	font-weight: normal;
+	font-family: 'Lato', sans-serif;
+	color: #666;
+ 	padding: 0.0em 0em 4em 0;
+	font-weight: 400;
 }
 
+#bigtitle {
+	font-size: 3.0em;	
+	font-weight: 300;
+}
 
 #wrap {
-     width: 625px;
+	background-color: white;
+     width: 1000px;
      margin: auto;
-     background-color: white;
-	 border: .2em  #555; 
+	 padding: 1em;
+	 font-size: 0.8em;
+}
+
+#wrapLeft {
+	margin-top: -0.3em;
+	 font-size: 1.0em;
+     width: 450px;
+	 float: left;
+	 line-height: 130%;
+}
+
+#wrapRight {
+	 font-size: 1.0em;
+     width: 550px;
+	 margin-left: 470px;
 }
 
 
@@ -65,8 +84,7 @@ blockquote:after {
 }
 
 a {
-font-weight: bold;
-color:#999;
+color: #F00;
 text-decoration: none;
 }
 
@@ -77,7 +95,6 @@ color: #aaa;
 
 a.nav-target {
 font-weight: normal;
-color:#900;
 }
 
 a.title {
@@ -92,7 +109,7 @@ color:#900;
 }
 
 h1 {
-font-size: 1.8em;
+font-size: 1.4em;
 text-transform: lowercase;
 font-weight: normal;
 padding-top: 10px;
@@ -106,6 +123,7 @@ font-size: 1.2em;
 text-transform: lowercase;
 font-weight: normal;
 padding-bottom: 2px;
+margin-top: -0.3em;
 }
 
 
