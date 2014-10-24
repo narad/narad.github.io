@@ -8,7 +8,7 @@
 
 <title>Jason Naradowsky</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
-<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.inference.phy.cam.ac.uk/hmw26/crf/index.rss" />
 <script type="text/javascript">
 <!--
@@ -57,7 +57,7 @@ Professional | <a href="personal.html"><u>Personal</u></a>
 -->
 <div id ="bigtitle">Jason <font color="black">Naradowsky</font></div>
 <hr />
-<p align="center"><img src="cats.png" width="1000" height="350" alt="404" /> 
+<p align="center"><img src="images/colorado3.jpg" width="1000" alt="404" /> 
 <hr />
 
 <div id="wrapLeft">
@@ -67,7 +67,7 @@ Professional | <a href="personal.html"><u>Personal</u></a>
 <p>I'm a postdoctoral researcher at University College London, where I work with <a href="http://www.riedelcastro.org/">Sebastian Riedel</a> in the <a href="http://mr.cs.ucl.ac.uk/">Machine Reading lab</a>. Prior to this I defended my thesis, entitled &quot;Learning with Joint Inference and Latent Linguistic Structure in Graphical Models&quot;, at 
   <a href="http://www.umass.edu/">UMass Amherst</a> where I was supervised by <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a> and 
   <a href="http://web.science.mq.edu.au/~mjohnson/">Mark Johnson</a>.</p>
-<p>My <a href="index.html#papers">papers</a>, and my <a href="_cv/narad_cv.pdf">cv</a>.</p>
+<p>My <a href="cv/narad_cv.pdf">cv</a>.</p>
 
 <p>My <a href="http://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Bacon_number">Erdős–Bacon number</a> is arguably no greater than 8.</p>
 
@@ -79,13 +79,11 @@ Professional | <a href="personal.html"><u>Personal</u></a>
 <h1><a name="software" class="nav-target">software</a></h1>
 
 <p><a href="http://www.wolfe.ml/">Wolfe</a>:<br />
-Wolfe compiles the declarative Scala code into highly optimized inference and learning routines that maintain or approximate the semantics of the original code. This allows you to focus on modelling while Wolfe is doing the heavy lifting.
 
-There is a limit to automatic optimization. Wolfe therefore provides hooks to inject procedural background knowledge such as optimization subroutines for specific types of sub-functions.</p>
+Wolfe is a probabilistic programming language that enables practitioners to develop machine learning models in a declarative manner.  Wolfe models are written in Scala and compiled by Wolfe into highly-optimized inference and learning routines (using Scala's own abstract syntax trees!), enabling researchers to focus on modelling while Wolfe does the heavy lifting.  It currently features matrix factorization, message passing, and alternating directions dual decomposition, can perform many structured prediction tasks, visualize inference in factor graphs, and more.
 
 <p><a href="http://www.nltk.org/">Natural Language Toolkit (NLTK)</a>:<br />
-The <a href="http://www.nltk.org/">Natural Language Toolkit</a> is a collection of open source Python modules that can be used freely for research or pedagogical purposes.  There's also <a href="http://www.amazon.com/Natural-Language-Processing-Python-Steven/dp/0596516495">a book</a> out now documenting how to use the NTLK - it doubles as an introductory computational linguistics coursebook.
-For the summer of 2008 I worked on the NLTK while sponsored under the <a href="http://code.google.com/soc/">Google Summer of Code</a> program, during which time I implemented a suite of dependency parsers under the supervision of <a href="http://riedelcastro.github.com/">Sebastian Riedel</a> and <a href="http://www.jasonbaldridge.com/">Jason Baldridge</a>.</p>
+The Natural Language Toolkit is a collection of open source Python modules that can be used freely for research or pedagogical purposes.  There's also <a href="http://www.amazon.com/Natural-Language-Processing-Python-Steven/dp/0596516495">a book</a> documenting how to use the NTLK which doubles as an introductory computational linguistics coursebook.  For the summer of 2008 I worked on the NLTK while sponsored under the <a href="http://code.google.com/soc/">Google Summer of Code</a> program, during which time I implemented a suite of dependency parsers under the supervision of <a href="http://riedelcastro.github.com/">Sebastian Riedel</a> and <a href="http://www.jasonbaldridge.com/">Jason Baldridge</a>.</p>
 
 </div>
 
@@ -93,7 +91,7 @@ For the summer of 2008 I worked on the NLTK while sponsored under the <a href="h
 
 <h1><a name="papers" class="nav-target">papers by year</a><sub style="font-size: 16px;">[<a onclick="switchAll(this, 7);">show all abstracts</a>]</sub></h1>
 
-<p><a href="_papers/relmarg_emnlp2012.pdf">Improving NLP through Marginalization of Hidden Syntactic Structure</a><br />
+<p><a href="papers/relmarg_emnlp2012.pdf">Improving NLP through Marginalization of Hidden Syntactic Structure</a><br />
 	Jason Naradowsky,
     <a href="http://riedelcastro.github.com/">Sebastian Riedel</a>, and 
     <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a>
@@ -101,8 +99,8 @@ For the summer of 2008 I worked on the NLTK while sponsored under the <a href="h
 	EMNLP 2012  
     <br />
 	[<a onclick="switchMenu('pub6');">abstract</a>] 
-    [<a href="_papers/relmarg_emnlp2012.pdf">paper</a>] 
-    [<a href="_bib/narad_emnlp2012.bib">bib</a>]
+    [<a href="papers/relmarg_emnlp2012.pdf">paper</a>] 
+    [<a href="bib/narad_emnlp2012.bib">bib</a>]
 </p>
  
 <div id="pub6"  style="display:none;">
@@ -114,7 +112,7 @@ For the summer of 2008 I worked on the NLTK while sponsored under the <a href="h
 </blockquote>
 </div>
 
-<p><a href="_papers/narad_coling2012.pdf">Grammarless Parsing for Joint Inference</a><br />
+<p><a href="papers/narad_coling2012.pdf">Grammarless Parsing for Joint Inference</a><br />
 	Jason Naradowsky,
     <a href="http://timvieira.github.com/">Tim Vieira</a>, and 
     <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a>
@@ -122,8 +120,8 @@ For the summer of 2008 I worked on the NLTK while sponsored under the <a href="h
 	COLING 2012  
     <br />
 	[<a onclick="switchMenu('pub5');">abstract</a>] 
-    [<a href="_papers/narad_coling2012.pdf">paper</a>] 
-    [<a href="_bib/narad_coling2012.bib">bib</a>]
+    [<a href="papers/narad_coling2012.pdf">paper</a>] 
+    [<a href="bib/narad_coling2012.bib">bib</a>]
 </p>
  
 <div id="pub5"  style="display:none;">
@@ -146,19 +144,19 @@ We propose an alternative and novel method in which constituency parse constrain
 <hr />
 <h2><a name="2011" class="nav-target">2011</a> </h2>
 
-<p><a href="_papers/P11-1090.pdf">Unsupervised Bilingual Morpheme Segmentation and Alignment with <br /> Context-rich Hidden Semi-Markov Models</a><br />
+<p><a href="papers/P11-1090.pdf">Unsupervised Bilingual Morpheme Segmentation and Alignment with <br /> Context-rich Hidden Semi-Markov Models</a><br />
 	Jason Naradowsky and 
     <a href="http://research.microsoft.com/en-us/people/kristout/">Kristina Toutanova</a> 
     <br />
 	ACL 2011  
     <br />
 	[<a onclick="switchMenu('pub4');">abstract</a>] 
-    [<a href="_papers/P11-1090.pdf">paper</a>] 
-    [<a href="_slides/morph_align.pdf">slides</a>] 
-    [<a href="_bib/narad_acl11a.bib">bib</a>]
+    [<a href="papers/P11-1090.pdf">paper</a>] 
+    [<a href="slides/morph_align.pdf">slides</a>] 
+    [<a href="bib/narad_acl11a.bib">bib</a>]
 </p>
 
-<!--<br />Slides:[<a href="_slides/morph_align.key">keynote</a>][<a href="_slides/morph_align.pdf">pdf</a>]</p>
+<!--<br />Slides:[<a href="slides/morph_align.key">keynote</a>][<a href="slides/morph_align.pdf">pdf</a>]</p>
  -->
  
 <div id="pub4"  style="display:none;">
@@ -168,7 +166,7 @@ This paper describes an unsupervised dynamic graphical model for morphological s
 </div>
 
 <p>
-	<a href="_papers/IR-825.pdf">A Discriminative Model for Joint Morphological Disambiguation and Dependency Parsing</a> 
+	<a href="papers/IR-825.pdf">A Discriminative Model for Joint Morphological Disambiguation and Dependency Parsing</a> 
 	<br />
 	<a href="http://www2.ctl.cityu.edu.hk/~jsylee/">John Lee</a>, 
     Jason Naradowsky, and 
@@ -177,8 +175,8 @@ This paper describes an unsupervised dynamic graphical model for morphological s
 	ACL 2011 
     <br />
 	[<a onclick="switchMenu('pub3');">abstract</a>] 
-    [<a href="_papers/IR-825.pdf">paper</a>] 
-    [<a href="_bib/narad_acl11b.bib">bib</a>]
+    [<a href="papers/IR-825.pdf">paper</a>] 
+    [<a href="bib/narad_acl11b.bib">bib</a>]
 </p>
 
 
@@ -202,8 +200,8 @@ This paper describes an unsupervised dynamic graphical model for morphological s
 	Synthesis Project, Presented at NECPHON 2011
     <br />
 	[<a onclick="switchMenu('pub7');">abstract</a>]
-	[<a href="_papers/synthesis.pdf">paper</a>] 
-	[<a href="_bib/narad_synthesis.bib">bib</a>]
+	[<a href="papers/synthesis.pdf">paper</a>] 
+	[<a href="bib/narad_synthesis.bib">bib</a>]
 </p>
 
 
@@ -235,7 +233,7 @@ Log-linear models provide a convenient method for coupling existing machine lear
 <h2><a name="2009" class="nav-target">2009</a></h2>
 
 <p>
-	<a href="_papers/mimno09polylingual.pdf">Polylingual Topic Models</a>
+	<a href="papers/mimno09polylingual.pdf">Polylingual Topic Models</a>
     <br  />
 	<a href="http://www.cs.umass.edu/~mimno/">David Mimno</a>, 
     <a href="http://www.cs.umass.edu/~wallach">Hanna Wallach</a>, 
@@ -246,8 +244,8 @@ Log-linear models provide a convenient method for coupling existing machine lear
     EMNLP 2009
     <br />
     [<a onclick="switchMenu('pub2');">abstract</a>]   
-    [<a href="_papers/mimno09polylingual.pdf">paper</a>] 
-    [<a href="_bib/narad_emnlp09.bib">bib</a>]
+    [<a href="papers/mimno09polylingual.pdf">paper</a>] 
+    [<a href="bib/narad_emnlp09.bib">bib</a>]
     
 
 <div id="pub2"  style="display:none;">
@@ -258,7 +256,7 @@ Topic models are a useful tool for analyzing large text collections, but have pr
 
 
 <p>
-	<a href="_papers/ijcai09.pdf">Improving Morphology Induction by Learning Spelling Rules</a>
+	<a href="papers/ijcai09.pdf">Improving Morphology Induction by Learning Spelling Rules</a>
     <br />
 	Jason Naradowsky and 
     <a href="http://homepages.inf.ed.ac.uk/sgwater/">Sharon Goldwater</a>
@@ -266,9 +264,9 @@ Topic models are a useful tool for analyzing large text collections, but have pr
     IJCAI 2009 
     <br />
     [<a onclick="switchMenu('pub1');">abstract</a>]   
-    [<a href="_papers/ijcai09.pdf">paper</a>] 
-    [<a href="_slides/ijcai09.pdf">slides</a>] 
-    [<a href="_bib/narad_ijcai09.bib">bib</a>]
+    [<a href="papers/ijcai09.pdf">paper</a>] 
+    [<a href="slides/ijcai09.pdf">slides</a>] 
+    [<a href="bib/narad_ijcai09.bib">bib</a>]
 </p>
 
 <div id="pub1" style="display:none;">
@@ -278,7 +276,7 @@ Unsupervised learning of morphology is an important task for human learners and 
 </div>
 
 <p> 
-	<a href="_papers/mimno09polylingual.pdf">Polylingual Topic Models</a>
+	<a href="papers/mimno09polylingual.pdf">Polylingual Topic Models</a>
 	<br />
 	<a href="http://www.cs.umass.edu/~mimno/">David Mimno</a>, 
     <a href="http://www.cs.umass.edu/~wallach">Hanna Wallach</a>, 
