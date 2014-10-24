@@ -73,18 +73,18 @@ blockquote {
 
 blockquote:before {
 	display: marker;
-	content: url("_images/left_quote_light.png");
+	content: url("../images/left_quote_light.png");
 	padding-right: 7px;
 }
 
 
 blockquote:after {
 	display: marker;
-	content: url("_images/right_quote_light.png"); padding-left: 5px;
+	content: url("../images/right_quote_light.png"); padding-left: 5px;
 }
 
 a {
-color: #F00;
+color: #E3110F;
 text-decoration: none;
 }
 
