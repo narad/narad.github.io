@@ -64,18 +64,20 @@ Professional | <a href="personal.html"><u>Personal</u></a>
 
 <h1><a name="about" class="nav-target">about</a></h1>
 
-<p>I'm a postdoctoral researcher at University College London, where I work with <a href="http://www.riedelcastro.org/">Sebastian Riedel</a> in the <a href="http://mr.cs.ucl.ac.uk/">Machine Reading lab</a>. Prior to this I defended my thesis, entitled &quot;Learning with Joint Inference and Latent Linguistic Structure in Graphical Models&quot;, at 
-  <a href="http://www.umass.edu/">UMass Amherst</a> where I was supervised by <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a> and 
-  <a href="http://web.science.mq.edu.au/~mjohnson/">Mark Johnson</a>.</p>
-  
+<p>I'm currently a postdoctoral researcher working with <a href="http://www.riedelcastro.org/">Sebastian Riedel</a>) in the <a href="http://mr.cs.ucl.ac.uk/">Machine Reading lab</a> at University College London.  My research interests focus on the following questions:
+<ul>
+<li> How can machines learn to extract semantic representations from unstructured text?</li>
+<li> How can we reason with symbolic logic in low-dimensional spaces or distributional models? </li>
+<li> How can we jointly train neural and traditional structured prediction models? </li>
+<li> How can we provide proofs for predictions made by machine reasoning systems? </li>
+</ul>
+
+All in the aim of bringing about better natural language understanding.  Coincidentally, I am funded by a <a href="http://googleresearch.blogspot.co.uk/2013/07/natural-language-understanding-focused.html">Google Natural Language Understanding Award</a>.
+</p>
+
 Links: &ensp; <a href="cv/narad_cv.pdf">CV</a> &ensp; <a href="http://scholar.google.co.uk/citations?user=w4d5WRcAAAAJ&hl=en&oi=aof">Google Scholar</a> &ensp; <a href="http://umass.academia.edu/JasonNaradowsky">Academia.edu</a> &ensp; <a href="https://github.com/narad">Github</a> </p>
 
 <p>My <a href="http://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Bacon_number">Erdős–Bacon number</a> is arguably no greater than 8.</p>
-
-<h1><a name="introduction" class="nav-target">research</a></h1>
-
-<p>My research focuses on statistical models of natural language processing and acquisition, with an emphasis on joint inference, unsupervised learning and statistical relational learning.  In my dissertation I present efficient methods for representing syntax in graphical models, and techniques for leveraging these representations to improve performance on related NLP problems.  In particular, I develop methods for training such models in the absence of syntactic annotation, learning latent syntactic representations that best support the desired end task. </br>
-</p>
 
 <h1><a name="software" class="nav-target">software</a></h1>
 
@@ -90,7 +92,38 @@ The Natural Language Toolkit is a collection of open source Python modules that 
 
 <div id="wrapRight">
 
-<h1><a name="papers" class="nav-target">papers by year</a><sub style="font-size: 16px;">[<a onclick="switchAll(this, 7);">show all abstracts</a>]</sub></h1>
+<h1><a name="papers" class="nav-target">papers by year</a><sub style="font-size: 16px;">[<a onclick="switchAll(this, 8);">show all abstracts</a>]</sub></h1>
+
+<hr />
+<h2><a name="2014" class="nav-target">2014</a> </h2>
+
+<p><a href="papers/narad_thesis.pdf">Learning with Joint Inference and Latent Linguistic Structure in Graphical Models</a><br />
+    Jason Naradowsky<br />
+    Doctoral Dissertation, 2014<br />
+    Supervisors: <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a> and 
+  <a href="http://web.science.mq.edu.au/~mjohnson/">Mark Johnson</a><br />
+    [<a onclick="switchMenu('pub7');">abstract</a>] 
+    [<a href="papers/narad_thesis.pdf">paper</a>] 
+    [<a href="bib/narad_thesis.bib">bib</a>]
+</p>
+
+<div id="pub7"  style="display:none;">
+<blockquote>
+    A human listener, charged with the difficult task of mapping language to meaning, must infer a rich hierarchy of linguistic structures, beginning with an utterance and culminating in an understanding of what was spoken. Much in the same manner, developing complete natural language processing systems requires the processing of many different layers of linguistic information in order to solve complex tasks, like answering a query or translating a document.
+</br>
+</br>
+    Historically the community has largely adopted a “divide and conquer” strategy, choosing to split up such complex tasks into smaller fragments which can be tackled independently, with the hope that these smaller contributions will also yield benefits to NLP systems as a whole. These individual components can be laid out in a pipeline and processed in turn, one system’s output becoming input for the next. This approach poses two problems. First, errors propagate, and, much like the childhood game of “telephone”, combining systems in this manner can lead to unintelligible outcomes. Second, each component task requires annotated training data to act as supervision for training the model. These annotations are often expensive and time-consuming to produce, may differ from each other in genre and style, and may not match the intended application.
+</br>
+</br>
+    In this dissertation we pursue novel extensions of joint inference techniques for natural language processing. We present a framework that offers a general method for constructing and performing inference using graphical model formulations of typical NLP problems. Models are composed using weighted Boolean logic constraints, inference is performed using belief propagation. The systems we develop are composed of two parts: one a representation of syntax, the other a desired end task (part-of-speech tagging, semantic role labeling, named entity recognition, or relation extraction). By modeling these problems jointly, both models are trained in a single, integrated process, with uncertainty propagated between them. This mitigates the accumulation of errors typical of pipelined approaches. We further advance previous methods for performing efficient inference on graphical model representations of combinatorial structure, like dependency syntax, extending it to various forms of phrase structure parsing.
+</br>
+</br>
+    Finding appropriate training data is a crucial problem for joint inference models. We observe that in many circumstances, the output of earlier components of the pipeline is often irrelevant – only the end task output is important. Yet we often have strong a priori assumptions regarding what this structure might look like: for phrase structure syntax the model should represent a valid tree, for dependency syntax it should represent a directed graph. We propose a novel marginalization-based training method in which the error signal from end task annotations is used to guide the induction of a constrained latent syntactic representation. This allows training in the absence of syntactic training data, where the latent syntactic structure is instead optimized to best support the end task predictions. We find that across many NLP tasks this training method offers performance comparable to fully supervised training of each individual component, and in some instances im- proves upon it by learning latent structures which are more appropriate for the task.
+</blockquote>
+</div>
+
+<hr />
+<h2><a name="2012" class="nav-target">2012</a> </h2>
 
 <p><a href="papers/relmarg_emnlp2012.pdf">Improving NLP through Marginalization of Hidden Syntactic Structure</a><br />
 	Jason Naradowsky,
