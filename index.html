@@ -7,7 +7,7 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,700' rel='stylesheet' type='text/css'>
 
 <title>Jason Naradowsky</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.inference.phy.cam.ac.uk/hmw26/crf/index.rss" />
 <script type="text/javascript">
@@ -38,7 +38,7 @@ function switchAll(obj, num) {
 	  }
 	  else {
 		el.style.display = 'none';
-	  }	
+	  }
 	}
 	hidden = !hidden;
 }
@@ -57,22 +57,25 @@ Professional | <a href="personal.html"><u>Personal</u></a>
 -->
 <div id ="bigtitle">Jason <font color="black">Naradowsky</font></div>
 <hr />
-<p align="center"><img src="images/colorado3.jpg" width="1000" alt="404" /> 
+<p align="center"><img src="images/colorado3.jpg" width="1000" alt="404" />
 <hr />
 
 <div id="wrapLeft">
 
 <h1><a name="about" class="nav-target">about</a></h1>
 
-<p>I'm currently a postdoctoral researcher working with <a href="http://www.riedelcastro.org/">Sebastian Riedel</a> in the <a href="http://mr.cs.ucl.ac.uk/">Machine Reading lab</a> at University College London.  My research interests focus on the following questions:
+<p>I'm currently a postdoctoral researcher at the University of Cambridge working with <a href="https://www.cl.cam.ac.uk/~alk23/">Anna Korhonen</a> on the LEXICAL project.&ensp;Previously I was sr. research associate at University College london, working with <a href="http://www.riedelcastro.org/">Sebastian Riedel</a> in the <a href="http://mr.cs.ucl.ac.uk/">Machine Reading lab</a>.</br>
+
+</br>
+My research interests are primarily:
 <ul>
-<li> How can machines learn to extract semantic representations from unstructured text?</li>
-<li> How can we reason with symbolic logic in low-dimensional spaces or distributional models? </li>
-<li> How can we jointly train neural and traditional structured prediction models? </li>
-<li> How can we provide proofs for predictions made by machine reasoning systems? </li>
+<li> Learning latent linguistic structure (morphology, syntax) from unstructured text.</li>
+<li> Neural machine translation for low-resource languages. </li>
+<li> Building question answering systems that combine dense distributional representations with structured, more symbolic reasoning and priors. </li>
+<li> Human-inspired incremental models of NLP via downstream losses (imitation learning, reinforcement learning, etc.). </li>
 </ul>
 
-All in the aim of bringing about better natural language understanding.  Coincidentally, I am funded by a <a href="http://googleresearch.blogspot.co.uk/2013/07/natural-language-understanding-focused.html">Google Natural Language Understanding Award</a>.
+I also try to maintain <a href="http://uclmr.github.io/ai4exams/eqa.html">EQA</a>, a website made for a targetted workshop on exam question answering, but which contains results, publications, and data sets for the recent surge in machine reading QA data sets in an easy-to-digest format.
 </p>
 
 Links: &ensp; <a href="cv/narad_cv.pdf">CV</a> &ensp; <a href="http://scholar.google.co.uk/citations?user=w4d5WRcAAAAJ&hl=en&oi=aof">Google Scholar</a> &ensp; <a href="http://umass.academia.edu/JasonNaradowsky">Academia.edu</a> &ensp; <a href="https://github.com/narad">Github</a> </p>
@@ -92,7 +95,73 @@ The Natural Language Toolkit is a collection of open source Python modules that 
 
 <div id="wrapRight">
 
-<h1><a name="papers" class="nav-target">papers by year</a><sub style="font-size: 16px;">[<a onclick="switchAll(this, 8);">show all abstracts</a>]</sub></h1>
+</br>
+<h1><a name="papers" class="nav-target">papers by year</a><sub style="font-size: 16px;">[<a onclick="switchAll(this, 9);">show all abstracts</a>]</sub></h1>
+<hr />
+<h2><a name="2016" class="nav-target">2016</a> </h2>
+
+<p><a href="papers/narad_thesis.pdf">Noise reduction and targeted exploration in imitation learning for Abstract Meaning Representation parsing</a><br />
+    James Goodman, Andreas Vlachos and Jason Naradowsky<br />
+    Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics <br />
+
+    [<a onclick="switchMenu('pub9');">abstract</a>]
+    [<a href="http://aclweb.org/anthology/P16-1001">paper</a>]
+    [<a href="https://www.dropbox.com/s/c9xtoiuyp80hzc3/goodman2016amr.bib?dl=0">bib</a>]
+</p>
+
+<div id="pub9"  style="display:none;">
+<blockquote>
+	Semantic parsers map natural language
+	statements into meaning representations,
+	and must abstract over syntactic phenomena,
+	resolve anaphora, and identify word
+	senses to eliminate ambiguous interpretations.
+	Abstract meaning representation
+	(AMR) is a recent example of one such
+	semantic formalism which, similar to a dependency
+	parse, utilizes a graph to represent
+	relationships between concepts (Banarescu
+	et al., 2013). As with dependency
+	parsing, transition-based approaches are a
+	common approach to this problem. However,
+	when trained in the traditional manner
+	these systems are susceptible to the accumulation
+	of errors when they find undesirable
+	states during greedy decoding.
+	Imitation learning algorithms have been
+	shown to help these systems recover from
+	such errors.
+</br>
+	To effectively use these methods
+	for AMR parsing we find it highly
+	beneficial to introduce two novel extensions:
+	noise reduction and targeted exploration.
+	The former mitigates the noise in
+	the feature representation, a result of the
+	complexity of the task. The latter targets
+	the exploration steps of imitation learning
+	towards areas which are likely to provide
+	the most information in the context of a
+	large action-space. We achieve state-ofthe
+	art results, and improve upon standard
+	transition-based parsing by 4.7 F1 points
+</blockquote>
+</div>
+
+<p><a href="papers/narad_thesis.pdf">UCL+Sheffield at SemEval-2016 Task 8: Imitation learning for AMR parsing with an &alpha;-bound</a><br />
+    James Goodman, Andreas Vlachos and Jason Naradowsky<br />
+    Proceedings of the 10th International Workshop on Semantic Evaluation <br />
+
+    [<a onclick="switchMenu('pub8');">abstract</a>]
+    [<a href="https://www.dropbox.com/s/xtval1y2b2w8mi8/naaclhlt2016.pdf?dl=0">paper</a>]
+    [<a href="https://www.dropbox.com/s/z4jejb5ka63u9ar/goodman2016emergent.bib?dl=0">bib</a>]
+</p>
+
+<div id="pub8"  style="display:none;">
+<blockquote>
+We  develop  a  novel  transition-based  parsing algorithm for the abstract meaning representation parsing task using exact imitation learning,  in  which  the  parser  learns  a  statisticalmodel  by  imitating  the  actions  of  an  experton the training data.   We then use the imitation learning algorithm DAGGER to improvethe performance, and apply an &alpha;-bound as asimple noise reduction technique. Our performance on the test set was 60% in F-score, andthe performance gains on the development setdue  to  DAGGER was  up  to  1.1  points  of  F-score. The &alpha;-bound improved performance byup to 1.8 points.
+</blockquote>
+</div>
 
 <hr />
 <h2><a name="2014" class="nav-target">2014</a> </h2>
@@ -100,10 +169,10 @@ The Natural Language Toolkit is a collection of open source Python modules that 
 <p><a href="papers/narad_thesis.pdf">Learning with Joint Inference and Latent Linguistic Structure in Graphical Models</a><br />
     Jason Naradowsky<br />
     Doctoral Dissertation, 2014<br />
-    Supervisors: <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a> and 
+    Supervisors: <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a> and
   <a href="http://web.science.mq.edu.au/~mjohnson/">Mark Johnson</a><br />
-    [<a onclick="switchMenu('pub7');">abstract</a>] 
-    [<a href="papers/narad_thesis.pdf">paper</a>] 
+    [<a onclick="switchMenu('pub7');">abstract</a>]
+    [<a href="papers/narad_thesis.pdf">paper</a>]
     [<a href="bib/narad_thesis.bib">bib</a>]
 </p>
 
@@ -127,19 +196,19 @@ The Natural Language Toolkit is a collection of open source Python modules that 
 
 <p><a href="papers/relmarg_emnlp2012.pdf">Improving NLP through Marginalization of Hidden Syntactic Structure</a><br />
 	Jason Naradowsky,
-    <a href="http://riedelcastro.github.com/">Sebastian Riedel</a>, and 
+    <a href="http://riedelcastro.github.com/">Sebastian Riedel</a>, and
     <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a>
     <br />
-	EMNLP 2012  
+	EMNLP 2012
     <br />
-	[<a onclick="switchMenu('pub6');">abstract</a>] 
-    [<a href="papers/relmarg_emnlp2012.pdf">paper</a>] 
+	[<a onclick="switchMenu('pub6');">abstract</a>]
+    [<a href="papers/relmarg_emnlp2012.pdf">paper</a>]
     [<a href="bib/narad_emnlp2012.bib">bib</a>]
 </p>
- 
+
 <div id="pub6"  style="display:none;">
 <blockquote>
-	Many NLP tasks make predictions that are inherently coupled to syntactic relations, but for many languages the resources required to provide such syntactic annotations are unavailable.  For others it is unclear exactly how much of the syntactic annotations can be effectively leveraged with current models, and what structures in the syntactic trees are most relevant to the current task.  
+	Many NLP tasks make predictions that are inherently coupled to syntactic relations, but for many languages the resources required to provide such syntactic annotations are unavailable.  For others it is unclear exactly how much of the syntactic annotations can be effectively leveraged with current models, and what structures in the syntactic trees are most relevant to the current task.
 </br>
 </br>
 	We propose a novel method which avoids the need for any syntactically annotated data when predicting a related NLP task.  Our method couples latent syntactic representations, constrained to form valid dependency graphs or constituency parses, with the prediction task via specialized factors in a Markov random field.  At both training and test time we marginalize over this hidden structure, learning the optimal latent representations for the problem.  Results show that this approach provides significant gains over a syntactically uninformed baseline, outperforming models that observe syntax on an English relation extraction task, and performing comparably to them in semantic role labeling.
@@ -148,16 +217,16 @@ The Natural Language Toolkit is a collection of open source Python modules that 
 
 <p><a href="papers/narad_coling2012.pdf">Grammarless Parsing for Joint Inference</a><br />
 	Jason Naradowsky,
-    <a href="http://timvieira.github.com/">Tim Vieira</a>, and 
+    <a href="http://timvieira.github.com/">Tim Vieira</a>, and
     <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a>
     <br />
-	COLING 2012  
+	COLING 2012
     <br />
-	[<a onclick="switchMenu('pub5');">abstract</a>] 
-    [<a href="papers/narad_coling2012.pdf">paper</a>] 
+	[<a onclick="switchMenu('pub5');">abstract</a>]
+    [<a href="papers/narad_coling2012.pdf">paper</a>]
     [<a href="bib/narad_coling2012.bib">bib</a>]
 </p>
- 
+
 <div id="pub5"  style="display:none;">
 <blockquote>
 	Many NLP tasks interact with syntax. The presence of a named entity span, for example, is often a clear indicator of a noun phrase in the parse tree, while a span in the syntax can help indicate the lack of a named entity in the spans that cross it. For these types of problems joint inference offers a better solution than a pipelined approach, and yet large joint models are rarely pursued. In this paper we argue this is due in part to the absence of a general framework for joint inference which can efficiently represent syntactic structure.
@@ -179,20 +248,20 @@ We propose an alternative and novel method in which constituency parse constrain
 <h2><a name="2011" class="nav-target">2011</a> </h2>
 
 <p><a href="papers/P11-1090.pdf">Unsupervised Bilingual Morpheme Segmentation and Alignment with <br /> Context-rich Hidden Semi-Markov Models</a><br />
-	Jason Naradowsky and 
-    <a href="http://research.microsoft.com/en-us/people/kristout/">Kristina Toutanova</a> 
+	Jason Naradowsky and
+    <a href="http://research.microsoft.com/en-us/people/kristout/">Kristina Toutanova</a>
     <br />
-	ACL 2011  
+	ACL 2011
     <br />
-	[<a onclick="switchMenu('pub4');">abstract</a>] 
-    [<a href="papers/P11-1090.pdf">paper</a>] 
-    [<a href="slides/morph_align.pdf">slides</a>] 
+	[<a onclick="switchMenu('pub4');">abstract</a>]
+    [<a href="papers/P11-1090.pdf">paper</a>]
+    [<a href="slides/morph_align.pdf">slides</a>]
     [<a href="bib/narad_acl11a.bib">bib</a>]
 </p>
 
 <!--<br />Slides:[<a href="slides/morph_align.key">keynote</a>][<a href="slides/morph_align.pdf">pdf</a>]</p>
  -->
- 
+
 <div id="pub4"  style="display:none;">
 <blockquote>
 This paper describes an unsupervised dynamic graphical model for morphological segmentation and bilingual morpheme alignment for statistical machine translation. The model extends Hidden Semi-Markov chain models by using factored output nodes and special structures for its conditional probability distributions. It relies on morpho-syntactic and lexical source-side information (part-of-speech, morphological segmentation) while learning a morpheme segmentation over the target language. Our model outperforms a competitive word alignment system in alignment quality. Used in a monolingual morphological segmentation setting it substantially improves accuracy over previous state-of-the-art models on three Arabic and Hebrew datasets.
@@ -200,16 +269,16 @@ This paper describes an unsupervised dynamic graphical model for morphological s
 </div>
 
 <p>
-	<a href="papers/IR-825.pdf">A Discriminative Model for Joint Morphological Disambiguation and Dependency Parsing</a> 
+	<a href="papers/IR-825.pdf">A Discriminative Model for Joint Morphological Disambiguation and Dependency Parsing</a>
 	<br />
-	<a href="http://www2.ctl.cityu.edu.hk/~jsylee/">John Lee</a>, 
-    Jason Naradowsky, and 
+	<a href="http://www2.ctl.cityu.edu.hk/~jsylee/">John Lee</a>,
+    Jason Naradowsky, and
     <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a>
     <br />
-	ACL 2011 
+	ACL 2011
     <br />
-	[<a onclick="switchMenu('pub3');">abstract</a>] 
-    [<a href="papers/IR-825.pdf">paper</a>] 
+	[<a onclick="switchMenu('pub3');">abstract</a>]
+    [<a href="papers/IR-825.pdf">paper</a>]
     [<a href="bib/narad_acl11b.bib">bib</a>]
 </p>
 
@@ -227,14 +296,14 @@ This paper describes an unsupervised dynamic graphical model for morphological s
 <p>
 		Feature Induction for Online Constraint-based Phonology Acquisition
 	<br />
-    Jason Naradowsky, 
+    Jason Naradowsky,
     <a href="http://people.umass.edu/pater/">Joe Pater</a>, and
     <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a>
     <br />
 	Synthesis Project, Presented at NECPHON 2011
     <br />
 	[<a onclick="switchMenu('pub7');">abstract</a>]
-	[<a href="papers/synthesis.pdf">paper</a>] 
+	[<a href="papers/synthesis.pdf">paper</a>]
 	[<a href="bib/narad_synthesis.bib">bib</a>]
 </p>
 
@@ -250,37 +319,37 @@ Log-linear models provide a convenient method for coupling existing machine lear
 <h2><a name="2010" class="nav-target">2010</a></h2>
 
 
-<p>Learning Hidden Metrical Structure with a Log-linear Model of Grammar 
+<p>Learning Hidden Metrical Structure with a Log-linear Model of Grammar
 	<br />
- 	Jason Naradowsky, 
-    <a href="http://people.umass.edu/pater/">Joe Pater</a>, 
-    <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a>, and 
-    <a href="http://people.umass.edu/rstaubs/">Robert Staubs</a> 
+ 	Jason Naradowsky,
+    <a href="http://people.umass.edu/pater/">Joe Pater</a>,
+    <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a>, and
+    <a href="http://people.umass.edu/rstaubs/">Robert Staubs</a>
     <br />
     Workshop on Computational Modelling of Sound Pattern Acquisition 2010
 </p>
- 
+
 <!-- "Learning hidden metrical structure with a log-linear model of grammar." Workshop on Computational Modelling of Sound Pattern Acquisition. Edmonton, Alberta, Canada: University of Alberta. 2010.
  -->
- 
+
 <hr />
 <h2><a name="2009" class="nav-target">2009</a></h2>
 
 <p>
 	<a href="papers/mimno09polylingual.pdf">Polylingual Topic Models</a>
     <br  />
-	<a href="http://www.cs.umass.edu/~mimno/">David Mimno</a>, 
-    <a href="http://www.cs.umass.edu/~wallach">Hanna Wallach</a>, 
-    Jason Naradowsky, 
+	<a href="http://www.cs.umass.edu/~mimno/">David Mimno</a>,
+    <a href="http://www.cs.umass.edu/~wallach">Hanna Wallach</a>,
+    Jason Naradowsky,
     <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a> and
-	<a href="http://www.cs.umass.edu/~mccallum/">Andrew McCallum</a> 
+	<a href="http://www.cs.umass.edu/~mccallum/">Andrew McCallum</a>
     <br />
     EMNLP 2009
     <br />
-    [<a onclick="switchMenu('pub2');">abstract</a>]   
-    [<a href="papers/mimno09polylingual.pdf">paper</a>] 
+    [<a onclick="switchMenu('pub2');">abstract</a>]
+    [<a href="papers/mimno09polylingual.pdf">paper</a>]
     [<a href="bib/narad_emnlp09.bib">bib</a>]
-    
+
 
 <div id="pub2"  style="display:none;">
 <blockquote>
@@ -292,14 +361,14 @@ Topic models are a useful tool for analyzing large text collections, but have pr
 <p>
 	<a href="papers/ijcai09.pdf">Improving Morphology Induction by Learning Spelling Rules</a>
     <br />
-	Jason Naradowsky and 
+	Jason Naradowsky and
     <a href="http://homepages.inf.ed.ac.uk/sgwater/">Sharon Goldwater</a>
     <br />
-    IJCAI 2009 
+    IJCAI 2009
     <br />
-    [<a onclick="switchMenu('pub1');">abstract</a>]   
-    [<a href="papers/ijcai09.pdf">paper</a>] 
-    [<a href="slides/ijcai09.pdf">slides</a>] 
+    [<a onclick="switchMenu('pub1');">abstract</a>]
+    [<a href="papers/ijcai09.pdf">paper</a>]
+    [<a href="slides/ijcai09.pdf">slides</a>]
     [<a href="bib/narad_ijcai09.bib">bib</a>]
 </p>
 
@@ -309,13 +378,13 @@ Unsupervised learning of morphology is an important task for human learners and 
 </blockquote>
 </div>
 
-<p> 
+<p>
 	<a href="papers/mimno09polylingual.pdf">Polylingual Topic Models</a>
 	<br />
-	<a href="http://www.cs.umass.edu/~mimno/">David Mimno</a>, 
-    <a href="http://www.cs.umass.edu/~wallach">Hanna Wallach</a>, 
-    <a href="http://www.cs.umass.edu/~lmyao/">Limin Yao</a>, 
-    Jason Naradowsky and 
+	<a href="http://www.cs.umass.edu/~mimno/">David Mimno</a>,
+    <a href="http://www.cs.umass.edu/~wallach">Hanna Wallach</a>,
+    <a href="http://www.cs.umass.edu/~lmyao/">Limin Yao</a>,
+    Jason Naradowsky and
 	<a href="http://www.cs.umass.edu/~mccallum/">Andrew McCallum</a>
 	<br />
     The Learning Workshop (Snowbird) 2009

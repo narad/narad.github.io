@@ -7,7 +7,7 @@ body {
 }
 
 #bigtitle {
-	font-size: 3.0em;	
+	font-size: 3.0em;
 	font-weight: 300;
 }
 
@@ -21,16 +21,18 @@ body {
 
 #wrapLeft {
 	margin-top: -0.3em;
+	margin-right: 1em;
 	 font-size: 1.0em;
-     width: 450px;
+     width: 500px;
 	 float: left;
 	 line-height: 130%;
+	 font-size: 1.2em;
 }
 
 #wrapRight {
 	 font-size: 1.0em;
-     width: 550px;
-	 margin-left: 470px;
+     width: 480px;
+	 margin-left: 520px;
 }
 
 
@@ -109,7 +111,7 @@ color:#900;
 }
 
 li {
-margin:0 0 4px 0;	
+margin:0 0 4px 0;
 }
 
 h1 {
