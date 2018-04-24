@@ -64,22 +64,22 @@ Professional | <a href="personal.html"><u>Personal</u></a>
 
 <h1><a name="about" class="nav-target">about</a></h1>
 
-<p>I'm currently a postdoctoral researcher at the University of Cambridge working with <a href="https://www.cl.cam.ac.uk/~alk23/">Anna Korhonen</a> on the LEXICAL project.&ensp;Previously I was sr. research associate at University College london, working with <a href="http://www.riedelcastro.org/">Sebastian Riedel</a> in the <a href="http://mr.cs.ucl.ac.uk/">Machine Reading lab</a>, and completed my PhD in Computer Science at UMass Amherst with <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a> and
-<a href="http://web.science.mq.edu.au/~mjohnson/">Mark Johnson</a>.</br>
+<p>Hi!  I'm a research scientist at <a href="https://hltcoe.jhu.edu/">Johns Hopkins University</a>, where I specialize in machine learning and natural language processing, and at <a href="https://www.preferred-networks.jp/en/">Preferred Networks</a>, an AI and robotics startup in Tokyo.  Previously I did postdoctoral work at the University of Cambridge (with <a href="https://www.cl.cam.ac.uk/~alk23/">Anna Korhonen</a>) and at University College London (with <a href="http://www.riedelcastro.org/">Sebastian Riedel</a>).  Prior to that I completed my PhD in Computer Science at UMass Amherst with <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a> and
+<a href="http://web.science.mq.edu.au/~mjohnson/">Mark Johnson</a>.</p>
 
-</br>
-My research interests are primarily:
+<p>
+I've bounced around a lot, both geographically and topically, and so it is difficult to claim my research has much of a unifying theme, but some overarching trends are:
 <ul>
 <li> Learning latent linguistic structure (morphology, syntax) from unstructured text.</li>
 <li> Neural machine translation for low-resource languages. </li>
 <li> Building question answering systems that combine dense distributional representations with structured, more symbolic reasoning and priors. </li>
 <li> Human-inspired incremental models of NLP via downstream losses (imitation learning, reinforcement learning, etc.). </li>
 </ul>
-
-I also try to maintain <a href="http://uclmr.github.io/ai4exams/eqa.html">EQA</a>, a website made for a targetted workshop on exam question answering, but which contains results, publications, and data sets for the recent surge in machine reading QA data sets in an easy-to-digest format.
 </p>
 
-Links: &ensp; <a href="cv/narad_cv.pdf">CV</a> &ensp; <a href="http://scholar.google.co.uk/citations?user=w4d5WRcAAAAJ&hl=en&oi=aof">Google Scholar</a> &ensp; <a href="http://umass.academia.edu/JasonNaradowsky">Academia.edu</a> &ensp; <a href="https://github.com/narad">Github</a> </p>
+<p>Recently I've become increasingly interested in computational creativitiy and the potential for AI in music creation, and perform some consulting work in these areas.  If you're also interested in these topics and would like to pursue a project with me, please feel free to get in touch.</p>
+
+Links: &ensp; <a href="cv/narad_cv.pdf">CV</a> &ensp; <a href="http://scholar.google.co.uk/citations?user=w4d5WRcAAAAJ&hl=en&oi=aof">Google Scholar</a> &ensp; <a href="https://github.com/narad">Github</a> </p>
 
 <p>My <a href="http://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Bacon_number">Erdős–Bacon number</a> is arguably no greater than 8.</p>
 
@@ -97,11 +97,181 @@ The Natural Language Toolkit is a collection of open source Python modules that 
 <div id="wrapRight">
 
 </br>
-<h1><a name="papers" class="nav-target">papers by year</a><sub style="font-size: 16px;">[<a onclick="switchAll(this, 9);">show all abstracts</a>]</sub></h1>
+<h1><a name="papers" class="nav-target">papers by year</a><sub style="font-size: 16px;">[<a onclick="switchAll(this, 15);">show all abstracts</a>]</sub></h1>
+<hr />
+<h2><a name="2018" class="nav-target">2018</a> </h2>
+
+<p><a href="">A Structured Variational Autoencoder for Morphological Inflection</a><br />
+    ACL 2018<br />
+
+    [<a onclick="switchMenu('pub15');">abstract</a>]
+    [paper]
+    [bib]
+</p>
+<div id="pub15" style="display:none;">
+<blockquote>
+	 Statistical morphological inflectors are typically trained on fully
+  supervised, type-level data. One remaining open research question is
+  the following: How can we effectively exploit raw, token-level data
+  to improve their performance? To this end, we introduce a novel
+  generative latent-variable  model for the semi-supervised
+  learning of inflection generation. To enable posterior inference
+  over the latent variables, we derive an efficient variational
+  inference procedure based on the wake-sleep algorithm. We experiment
+  on 23 languages, using the Universal Dependency corpora in a simulated
+  low-resource setting, and find an
+  average improvement of 10%.
+</blockquote>
+</div>
+
+<p><a href="">Hypothesis Only Baselines in Natural Language Inference</a><br />
+Adam Poliak, Jason Naradowsky, Aparajita Haldar, Rachel Rudinger, and Benjamin Van Durme</br>
+    *Sem 2018<br />
+
+    [<a onclick="switchMenu('pub14');">abstract</a>]
+    [paper]
+    [bib]
+</p>
+<div id="pub14" style="display:none;">
+<blockquote>
+We propose a <i>hypothesis only</i> baseline for diagnosing Natural Language Inference (NLI).  Especially when an NLI dataset assumes inference is occurring based purely on the relationship between a context and a hypothesis, it follows that assessing entailment relations while ignoring the provided context is a degenerate solution.  Yet, through experiments on ten distinct NLI datasets, we find that this approach, which we refer to as a hypothesis-only model, is able to significantly outperform a majority-class baseline across a number of NLI datasets.  Our analysis suggests that statistical irregularities may allow a model to perform NLI in some datasets beyond what should be achievable without access to the context.
+</blockquote>
+</div>
+
+<p><a href="">Gender Bias in Coreference Resolution</a><br />
+Rachel Rudinger, Jason Naradowsky, Brian Leonard, and Benjamin Van Durme</br>
+NAACL 2017<br />
+
+    [<a onclick="switchMenu('pub13');">abstract</a>]
+    [paper]
+    [bib]
+</p>
+<div id="pub13" style="display:none;">
+<blockquote>
+We present an empirical study of gender bias in coreference resolution systems. We first introduce a novel, Winograd schema-style set of minimal pair sentences that differ only by pronoun gender.
+With these <i>Winogender schemas</i>, we evaluate and confirm systematic gender bias in three publicly-available coreference resolution systems, and correlate this bias with real-world and textual gender statistics.
+</blockquote>
+</div>
+
+
+
+
+<hr />
+<h2><a name="2017" class="nav-target">2017</a> </h2>
+
+
+
+
+<p><a href="https://arxiv.org/pdf/1605.06640.pdf">Programming with a differentiable forth interpreter</a><br />
+Matko Bosnjak, Tim Rocktäschel, Jason Naradowsky, and Sebastian Riedel</br>
+ICML 2017<br />
+
+    [<a onclick="switchMenu('pub12');">abstract</a>]
+    [<a href="https://arxiv.org/pdf/1605.06640.pdf">paper</a>]
+    [<a href="bib/bosnjak2016programming.bib">bib</a>]
+</p>
+<div id="pub12" style="display:none;">
+<blockquote>
+Given that in practice training data is scarce for all but a
+small set of problems, a core question is how to incorporate
+prior knowledge into a model. In this paper, we consider
+the case of prior <i>procedural</i> knowledge for neural networks,
+such as knowing how a program should traverse a sequence,
+but not what local actions should be performed at each
+step. To this end, we present an end-to-end differentiable
+interpreter for the programming language Forth which
+enables programmers to write program sketches with slots
+that can be filled with behaviour trained from program
+input-output data. We can optimise this behaviour directly
+through gradient descent techniques on user-specified
+objectives, and also integrate the program into any larger
+neural computation graph. We show empirically that our
+interpreter is able to effectively leverage different levels
+of prior program structure and learn complex behaviours
+such as sequence sorting and addition. When connected
+to outputs of an LSTM and trained jointly, our interpreter
+achieves state-of-the-art accuracy for end-to-end reasoning
+about quantities expressed in natural language stories.
+</blockquote>
+</div>
+
+<p><a href="https://deepstruct.github.io/ICML17/1stDeepStructWS_paper_12.pdf">Modeling exclusion with a differentiable factor graph constraint</a><br />
+Jason Naradowsky and Sebastian Riedel</br>
+ICML 2017, DeepStruct<br />
+
+    [<a onclick="switchMenu('pub11');">abstract</a>]
+    [<a href="https://deepstruct.github.io/ICML17/1stDeepStructWS_paper_12.pdf">paper</a>]
+    [bib]
+</p>
+<div id="pub11" style="display:none;">
+<blockquote>
+With the adoption of general neural network architectures,
+many researchers have opted to trade
+informative priors for powerful models and big
+data. However, for many structured prediction
+tasks the complex relationships between variables
+in the output space are often difficult to
+learn from the available data alone.
+<br>
+Such relationships often centre around the notion
+of exclusion: that predicting one structure
+prohibits the prediction of others. In this work
+we formulate a differentiable factor graph exclusion
+constraint to incorporate this prior belief
+into neural end-to-end architectures. We demonstrate
+the effectiveness of this method in the context
+of extracting event information from clusters
+of related news articles, and introduce metainference
+learning to determine the ideal number
+of inference iterations to simulate.
+
+</blockquote>
+</div>
+
+<p><a href="http://aclweb.org/anthology/D17-1220">Break it down for me: A study in automated lyric annotation</a><br />
+Lucas Sterckx, Jason Naradowsky, Bill Byrne, Thomas Demeester, and Chris Develder</br>
+EMNLP 2017<br />
+    [<a onclick="switchMenu('pub10');">abstract</a>]
+    [<a href="http://aclweb.org/anthology/D17-1220">paper</a>]
+    [<a href="http://aclweb.org/anthology/D17-1220.bib">bib</a>]
+</p>
+<div id="pub10" style="display:none;">
+<blockquote>
+Comprehending lyrics, as found in songs and poems, can pose a challenge to
+	human and machine readers alike.  This motivates the need for systems that can
+	understand the ambiguity and jargon found in such creative texts, and provide
+	commentary to aid readers in reaching the correct interpretation.
+	We introduce the task of automated lyric annotation (ALA).  Like text
+	simplification, a goal of ALA is to rephrase the original text in a more easily
+	understandable manner. However, in ALA the system must often include additional
+	information to clarify niche terminology and abstract concepts. To stimulate
+	research on this task, we release a large collection of crowdsourced
+	annotations for song lyrics. We analyze the performance of translation and
+	retrieval models on this task, measuring performance with both automated and
+	human evaluation. We find that each model captures a unique type of information
+	important to the task.
+</blockquote>
+</div>
+
+
+<p><a href="papers/rnn_nampi.pdf">A neural forth abstract machine</a><br />
+Matko Bosnjak, Tim Rocktäschel, Jason Naradowsky, and Sebastian Riedel</br>
+NIPS 2017, NAMPI<br />
+    [abstract]
+    [<a href="papers/rnn_nampi.pdf">paper</a>]
+    [<a href="bib/bosjnak_rnn_nampi.bib">bib</a>]
+</p>
+<div id="pub14" style="display:none;">
+<blockquote>
+
+</blockquote>
+</div>
+
+
 <hr />
 <h2><a name="2016" class="nav-target">2016</a> </h2>
 
-<p><a href="papers/narad_thesis.pdf">Noise reduction and targeted exploration in imitation learning for Abstract Meaning Representation parsing</a><br />
+<p><a href="http://aclweb.org/anthology/P16-1001">Noise reduction and targeted exploration in imitation learning for Abstract Meaning Representation parsing</a><br />
     James Goodman, Andreas Vlachos and Jason Naradowsky<br />
     Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics <br />
 
