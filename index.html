@@ -64,7 +64,7 @@ Professional | <a href="personal.html"><u>Personal</u></a>
 
 <h1><a name="about" class="nav-target">about</a></h1>
 
-<p>Hi!  I'm a researcher at <a href="https://www.squareenix-alchemy.com/">Square Enix AI & Arts Alchemy</a>, working towards ML-powered next generation interactive experiences in gaming.  I am also a project assistant professor at University of Tokyo, Miyao-ken, leading the dialogue and LLM group.  Some of my current research interests are:
+<p>Hi!  I'm a researcher at <a href="https://www.squareenix-alchemy.com/">Square Enix AI & Arts Alchemy</a>, working towards ML-powered next generation interactive experiences in gaming.  I am also a project assistant professor at <a href="https://mynlp.is.s.u-tokyo.ac.jp/en/index">University of Tokyo, Miyao-ken</a>, leading the dialogue and LLM group.  Some of my current research interests are:
 <ul>
 <li> Generative/LLM Agents.</li>
 <li> Charater-driven Dialogue Generation and Storytelling. </li>
@@ -73,7 +73,7 @@ Professional | <a href="personal.html"><u>Personal</u></a>
 </ul>
 </p>
 
-<p>Recently I've become increasingly interested in computational creativitiy and the potential for AI in music creation.  In my spare time try to apply this in my own wheelhouse, where I am developing new ways to apply ML to digitally recreate, expand on, and invent musical tools for electric stringed instruments and synthesizers (especially amplifiers and effects).  If you're also interested in these topics, especially if you're located in Japan, feel free to get in touch.</p>
+<p>Recently I've become increasingly interested in computational creativitiy and the potential for AI in music creation, and often work on projects in these areas in my spare time.  If you're also interested in these topics, especially if you're located in Japan, feel free to get in touch.</p>
 
 
 Previously I worked at the Japanese AI/Robotics startup, Preferred Networks.  Prior to moving to Japan, I was a faculty research scientist at <a href="https://hltcoe.jhu.edu/">Johns Hopkins University</a>, and did postdoctoral work at the University of Cambridge (with <a href="https://www.cl.cam.ac.uk/~alk23/">Anna Korhonen</a>) and at University College London (with <a href="http://www.riedelcastro.org/">Sebastian Riedel</a>).  Prior to that I completed my PhD in Computer Science at UMass Amherst with <a href="http://www.ccs.neu.edu/home/dasmith/">David Smith</a> and
@@ -98,10 +98,185 @@ The Natural Language Toolkit is a collection of open source Python modules that 
 <div id="wrapRight">
 
 </br>
-<h1><a name="papers" class="nav-target">papers by year</a><sub style="font-size: 16px;">[<a onclick="switchAll(this, 20);">show all abstracts</a>]</sub></h1>
+<h1><a name="papers" class="nav-target">papers by year</a><sub style="font-size: 16px;">[<a onclick="switchAll(this, 26);">show all abstracts</a>]</sub></h1>
+
+<!-- ================== 2023 ===================== -->
 
 <hr />
-<h2><a name="2019" class="nav-target">2020</a> </h2>
+<h2><a name="2023" class="nav-target">2023</a> </h2>
+
+<p><a href="https://arxiv.org/abs/2310.15415">Mind the gap between conversations for improved long-term dialogue generation</a><br />
+Qiang Zhang, Jason Naradowsky, and Yusuke Miyao
+</br>
+    EMNLP Findings 2023<br />
+
+    [<a onclick="switchMenu('pub26');">abstract</a>]
+    [<a href="https://aclanthology.org/2023.findings-emnlp.720.pdf">paper</a>]
+    [<a href="https://aclanthology.org/2023.findings-emnlp.720.bib">bib</a>]
+</p>
+<div id="pub26" style="display:none;">
+<blockquote>
+Knowing how to end and resume conversations over time is a natural part of communication, allowing for discussions to span weeks, months, or years. The duration of gaps between conversations dictates which topics are relevant and which questions to ask, and dialogue systems which do not explicitly model time may generate responses that are unnatural. In this work we explore the idea of making dialogue models aware of time, and present GapChat, a multi-session dialogue dataset in which the time between each session varies. While the dataset is constructed in real-time, progress on events in speakers{'} lives is simulated in order to create realistic dialogues occurring across a long timespan. We expose time information to the model and compare different representations of time and event progress. In human evaluation we show that time-aware models perform better in metrics that judge the relevance of the chosen topics and the information gained from the conversation.
+</blockquote>
+</div>
+
+<p><a href="https://arxiv.org/abs/2305.17878">Ask an Expert: Leveraging Language Models to Improve Strategic Reasoning in Goal-Oriented Dialogue Models</a><br />
+Qiang Zhang, Jason Naradowsky, and Yusuke Miyao
+</br>
+    ACL Findings 2023<br />
+
+    [<a onclick="switchMenu('pub25');">abstract</a>]
+    [<a href="https://aclanthology.org/2023.findings-acl.417.pdf">paper</a>]
+    [<a href="https://aclanthology.org/2023.findings-acl.417.bib">bib</a>]
+</p>
+<div id="pub25" style="display:none;">
+<blockquote>
+Existing dialogue models may encounter scenarios which are not well-represented in the training data, and as a result generate responses that are unnatural, inappropriate, or unhelpful. We propose the "Ask an Expert" framework in which the model is trained with access to an "expert" which it can consult at each turn. Advice is solicited via a structured dialogue with the expert, and the model is optimized to selectively utilize (or ignore) it given the context and dialogue history. In this work the expert takes the form of an LLM.We evaluate this framework in a mental health support domain, where the structure of the expert conversation is outlined by pre-specified prompts which reflect a reasoning strategy taught to practitioners in the field. Blenderbot models utilizing "Ask an Expert" show quality improvements across all expert sizes, including those with fewer parameters than the dialogue model itself. Our best model provides a 10% improvement over baselines, approaching human-level scores on "engingingness" and "helpfulness" metrics.
+</blockquote>
+</div>
+
+
+<p><a href="https://aclanthology.org/2023.eacl-main.128.pdf">Fiction-Writing Mode: An Effective Control for Human-Machine Collaborative Writing</a><br />
+Wenjie Zhong, Jason Naradowsky, Hiroya Takamura, Ichiro Kobayashi, and Yusuke Miyao
+</br>
+    EACL 2023<br />
+
+    [<a onclick="switchMenu('pub24');">abstract</a>]
+    [<a href="https://aclanthology.org/2023.eacl-main.128.pdf">paper</a>]
+    [<a href="https://aclanthology.org/2023.eacl-main.128.bib">bib</a>]
+</p>
+<div id="pub24" style="display:none;">
+<blockquote>
+We explore the idea of incorporating concepts from writing skills curricula into human-machine collaborative writing scenarios, focusing on adding writing modes as a control for text generation models. Using crowd-sourced workers, we annotate a corpus of narrative text paragraphs with writing mode labels. Classifiers trained on this data achieve an average accuracy of 87% on held-out data. We fine-tune a set of large language models to condition on writing mode labels, and show that the generated text is recognized as belonging to the specified mode with high accuracy. To study the ability of writing modes to provide fine-grained control over generated text, we devise a novel turn-based text reconstruction game to evaluate the difference between the generated text and the author's intention. We show that authors prefer text suggestions made by writing mode-controlled models on average 61.1% of the time, with satisfaction scores 0.5 higher on a 5-point ordinal scale. When evaluated by humans, stories generated via collaboration with writing mode-controlled models achieve high similarity with the professionally written target story. We conclude by identifying the most common mistakes found in the generated stories.
+</blockquote>
+</div>
+
+<p><a href="https://arxiv.org/abs/2305.10920">Emergent Communication with Attention</a><br />
+Ryokan Ri, Ryo Ueda, and Jason Naradowsky
+</br>
+    CogSci 2023<br />
+
+    [<a onclick="switchMenu('pub23');">abstract</a>]
+    [<a href="https://arxiv.org/pdf/2305.10920.pdf">paper</a>]
+    [<a href="bib/attention_ec.bib">bib</a>]
+</p>
+<div id="pub23" style="display:none;">
+<blockquote>
+To develop computational agents that better communicate using their own emergent language, we endow the agents with an ability to focus their attention on particular concepts in the
+environment. Humans often understand an object or scene as a
+composite of concepts and those concepts are further mapped
+onto words. We implement this intuition as cross-modal attention mechanisms in Speaker and Listener agents in a referential game and show attention leads to more compositional and
+interpretable emergent language. We also demonstrate how attention aids in understanding the learned communication protocol by investigating the attention weights associated with
+each message symbol and the alignment of attention weights
+between Speaker and Listener agents. Overall, our results suggest that attention is a promising mechanism for developing
+more human-like emergent language.
+</blockquote>
+</div>
+
+<!-- ================== 2022 ===================== -->
+
+<hr />
+<h2><a name="2022" class="nav-target">2022</a> </h2>
+
+<p><a href="https://arxiv.org/abs/2204.10521">Rethinking Offensive Text Detection as a Multi-Hop Reasoning Problem
+</a><br />
+Qiang Zhang, Jason Naradowsky, and Yusuke Miyao
+</br>
+    ACL Findings 2022<br />
+
+    [<a onclick="switchMenu('pub22');">abstract</a>]
+    [<a href="https://aclanthology.org/2022.findings-acl.307.pdf">paper</a>]
+    [<a href="https://aclanthology.org/2022.findings-acl.307.bib">bib</a>]
+</p>
+<div id="pub22" style="display:none;">
+<blockquote>
+We introduce the task of implicit offensive text detection in dialogues, where a statement may have either an offensive or non-offensive interpretation, depending on the listener and context. We argue that reasoning is crucial for understanding this broader class of offensive utterances and release SLIGHT, a dataset to support research on this task. Experiments using the data show that state-of-the-art methods of offense detection perform poorly when asked to detect implicitly offensive statements, achieving only ∼11% accuracy.
+In contrast to existing offensive text detection datasets, SLIGHT features human-annotated chains of reasoning which describe the mental process by which an offensive interpretation can be reached from each ambiguous statement. We explore the potential for a multi-hop reasoning approach by utilizing existing entailment models to score the probability of these chains and show that even naive reasoning models can yield improved performance in most situations. Furthermore, analysis of the chains provides insight into the human interpretation process and emphasizes the importance of incorporating additional commonsense knowledge.
+</blockquote>
+</div>
+
+
+<!-- ================== 2021 ===================== -->
+
+<hr />
+<h2><a name="2021" class="nav-target">2021</a> </h2>
+
+<p><a href="https://www.dafx.de/paper-archive/details.php?id=G8gchE7K8Itm8VPTGRtYyA">Amp-Space: A Large-scale Dataset for Fine-grained Timbre Transformation
+</a><br />
+Jason Naradowsky
+</br>
+    DAFx 2021<br />
+
+    [<a onclick="switchMenu('pub21');">abstract</a>]
+    [<a href="https://www.dafx.de/paper-archive/details.php?id=G8gchE7K8Itm8VPTGRtYyA">paper</a>]
+    [<a href="bib/amp-space.bib">bib</a>]
+    [<a href="https://github.com/narad/amp-space">code</a>]
+</p>
+<div id="pub21" style="display:none;">
+<blockquote>
+We release Amp-Space, a large-scale dataset of paired audio samples: a source audio signal, and an output signal, the result of a timbre transformation. The types of transformations we study are from blackbox musical tools (amplifiers, stompboxes, studio effects) traditionally used to shape the sound of guitar, bass, or synthesizer sounds. For each sample of transformed audio, the set of parameters used to create it are given. Samples are from both real and simulated devices, the latter allowing for orders of magnitude greater data than found in comparable datasets. We demonstrate potential use cases of this data by (a) pre-training a conditional WaveNet model on synthetic data and show that it reduces the number of samples necessary to digitally reproduce a real musical device, and (b) training a variational autoencoder to shape a continuous space of timbre transformations for creating new sounds through interpolation.
+</blockquote>
+</div>
+
+<!-- ================== 2020 ===================== -->
+<hr />
+<h2><a name="202" class="nav-target">2020</a> </h2>
+
+
+<p><a href="https://arxiv.org/abs/2002.09646">Machine Translation System Selection from Bandit Feedback
+</a><br />
+Jason Naradowsky, Xuan Zhang, and Kevin Duh
+</br>
+    AMTA 2020<br />
+
+    [<a onclick="switchMenu('pub20');">abstract</a>]
+    [<a href="https://aclanthology.org/2020.amta-research.5.pdf">paper</a>]
+    [<a href="https://aclanthology.org/2020.amta-research.5.bib">bib</a>]
+</p>
+<div id="pub20" style="display:none;">
+<blockquote>
+Adapting machine translation systems in the real world is a difficult problem. In contrast to offline training, users cannot provide the type of fine-grained feedback (such as correct translations) typically used for improving the system. Moreover, different users have different translation needs, and even a single user's needs may change over time.
+In this work we take a different approach, treating the problem of adaptation as one of selection. Instead of adapting a single system, we train many translation systems using different architectures, datasets, and optimization methods. Using bandit learning techniques on simulated user feedback, we learn a policy to choose which system to use for a particular translation task. We show that our approach can (1) quickly adapt to address domain changes in translation tasks, (2) outperform the single best system in mixed-domain translation tasks, and (3) make effective instance-specific decisions when using contextual bandit strategies.
+</blockquote>
+</div>
+
+<p><a href="https://arxiv.org/abs/2009.05940">Pow-Wow: A dataset
+and study on collaborative communication in Pommerman
+</a><br />
+Takuma Yoneda, Matthew Walter, and Jason Naradowsky
+</br>
+    Language in Reinforcement Learning (LaReL), 2020<br />
+
+    [<a onclick="switchMenu('pub19');">abstract</a>]
+    [<a href="https://arxiv.org/pdf/2009.05940.pdf">paper</a>]
+    [<a href="bib/pow-wow.bib">bib</a>]
+</p>
+<div id="pub19" style="display:none;">
+<blockquote>
+In multi-agent learning, agents must coordinate
+with each other in order to succeed. For humans, this coordination is typically accomplished
+through the use of language. In this work we
+perform a controlled study of human language
+use in a competitive team-based game, and search
+for useful lessons for structuring communication
+protocol between autonomous agents.
+<br>
+We construct Pow-Wow, a new dataset for studying situated goal-directed human communication.
+Using the Pommerman game environment, we enlisted teams of humans to play against teams of
+AI agents, recording their observations, actions,
+and communications. We analyze the types of
+communications which result in effective game
+strategies, annotate them accordingly, and present
+corpus-level statistical analysis of how trends in
+communications affect game outcomes. Based on
+this analysis, we design a communication policy
+for learning agents, and show that agents which
+utilize communication achieve higher win-rates
+against baseline systems than those which do not.
+</blockquote>
+</div>
+
+
 <p><a href="https://arxiv.org/abs/2002.07016">Meta-learning Extractors for Music Source Separation</a><br />
 David Samuel, Aditya Ganeshan, and Jason Naradowsky
 </br>
@@ -121,6 +296,7 @@ David Samuel, Aditya Ganeshan, and Jason Naradowsky
 
 <hr />
 <h2><a name="2019" class="nav-target">2019</a> </h2>
+
 <p><a href="https://arxiv.org/abs/2002.09604">Emergent Communication with World Models</a><br />
 Alex Cowen-Rivers and Jason Naradowsky</br>
     NeurIPS 2019 Workshop on Emergent Communication (EmeCom)<br />
